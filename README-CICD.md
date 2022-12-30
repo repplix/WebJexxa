@@ -40,5 +40,5 @@ So, if you want to create and docker image just go to GitHub actions and start a
 ### Deploy Stack
 In order to deploy the stack, you can use following command
 ```shell
-docker stack deploy --compose-file ./deploy/docker-compose.yml jexxatemplate
+docker stack deploy --compose-file ./deploy/docker-compose.yml webjexxa
 ```

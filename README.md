@@ -1,7 +1,7 @@
-[![Maven Test Build](https://github.com/jexxa-projects/JexxaTemplate/actions/workflows/mavenBuild.yml/badge.svg)](https://github.com/jexxa-projects/JexxaTemplate/actions/workflows/mavenBuild.yml)
-[![New Release](https://github.com/jexxa-projects/JexxaTemplate/actions/workflows/newRelease.yml/badge.svg)](https://github.com/jexxa-projects/JexxaTemplate/actions/workflows/newRelease.yml)
+[![Maven Test Build](https://github.com/jexxa-projects/WebJexxa/actions/workflows/mavenBuild.yml/badge.svg)](https://github.com/jexxa-projects/WebJexxa/actions/workflows/mavenBuild.yml)
+[![New Release](https://github.com/jexxa-projects/WebJexxa/actions/workflows/newRelease.yml/badge.svg)](https://github.com/jexxa-projects/WebJexxa/actions/workflows/newRelease.yml)
 
-# JexxaTemplate
+# WebJexxa
 This template can be used to start your own Jexxa application 
 
 ## Requirements
@@ -15,12 +15,12 @@ This template can be used to start your own Jexxa application
 
 *   Build your first Jexxa-project as self-contained jar and/or docker image
     
-*   Template for [Unit-](src/test/java/io/jexxa/jexxatemplate/domain/book/BookTest.java), [Stub-](src/test/java/io/jexxa/jexxatemplate/applicationservice/BookStoreServiceTest.java) and [Integration tests](src/test/java/io/jexxa/jexxatemplate/integration/JexxaTemplateIT.java)
+*   Template for [Unit-](src/test/java/io/jexxa/webjexxa/domain/book/BookTest.java), [Stub-](src/test/java/io/jexxa/webjexxa/applicationservice/BookStoreServiceTest.java) and [Integration tests](src/test/java/io/jexxa/webjexxa/integration/WebJexxaIT.java)
 
 *   Predefined architectural tests for: 
-    *   [Pattern Language](src/test/java/io/jexxa/jexxatemplate/architecture/ArchitectureTest.java) to validate the correct annotation of your application using project [Addend](http://addend.jexxa.io/) 
-    *   [Ports&Adapters Architecture](src/test/java/io/jexxa/jexxatemplate/architecture/ArchitectureTest.java) to validates dependencies between packages of your application
-    *   [Usage of Aggregates](src/test/java/io/jexxa/jexxatemplate/architecture/ArchitectureTest.java) to validate that your business logic is not exposed
+    *   [Pattern Language](src/test/java/io/jexxa/webjexxa/architecture/ArchitectureTest.java) to validate the correct annotation of your application using project [Addend](http://addend.jexxa.io/) 
+    *   [Ports&Adapters Architecture](src/test/java/io/jexxa/webjexxa/architecture/ArchitectureTest.java) to validates dependencies between packages of your application
+    *   [Usage of Aggregates](src/test/java/io/jexxa/webjexxa/architecture/ArchitectureTest.java) to validate that your business logic is not exposed
 
 *   Predefined CI/CD pipeline for GitHub including automatic dependency updates 
  
@@ -29,7 +29,7 @@ This template can be used to start your own Jexxa application
 *   In GitHub press `Use this template` (requires GitHub account) or fork the project. If you do not have a GitHub account you can just clone the repository. 
 
 *   Enter a `project name` for the repository. This template uses following convention:
-    *   Project name should be written in camel case notation, such as `JexxaTemplate`
+    *   Project name should be written in camel case notation, such as `WebJexxa`
     *   Project name of the repository is equal to the name of the java application
 
 ## Build the Project
@@ -40,14 +40,14 @@ This template can be used to start your own Jexxa application
     ```shell
     mvn clean install -P '!integrationTests'
 
-    java -jar "-Dio.jexxa.config.import=src/test/resources/jexxa-local.properties" target/jexxatemplate-jar-with-dependencies.jar
+    java -jar "-Dio.jexxa.config.import=src/test/resources/jexxa-local.properties" target/webjexxa-jar-with-dependencies.jar
     ```
 
 *   [Optional] **With** running [developer stack](deploy/developerStack.yml):
     ```shell
     mvn clean install
     
-    java -jar "-Dio.jexxa.config.import=src/test/resources/jexxa-test.properties" target/jexxatemplate-jar-with-dependencies.jar
+    java -jar "-Dio.jexxa.config.import=src/test/resources/jexxa-test.properties" target/webjexxa-jar-with-dependencies.jar
     ```
 
 *   Now you can use `curl` to access your application:
@@ -68,7 +68,7 @@ This template can be used to start your own Jexxa application
 
 ### Adjust Project Name
 
-Rename `JexxaTemplate` to your own applications name, as described [here](README-ProjectName.md). 
+Rename `WebJexxa` to your own applications name, as described [here](README-ProjectName.md). 
 
 ### Set up the CI/CD Pipeline  
 

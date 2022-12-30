@@ -1,8 +1,8 @@
 # Adjust Project Name 
 
-*   Refactor/Rename file `JexxaTemplate.java` into `<ProjektName>.java` within your IDE
+*   Refactor/Rename file `WebJexxa.java` into `<ProjektName>.java` within your IDE
 
-*   Refactor/Rename the GroupId (directory) `io.jexxa.jexxatemplate` into `com.github.<your-github-account>` for example within your IDE
+*   Refactor/Rename the GroupId (directory) `io.jexxa.webjexxa` into `com.github.<your-github-account>` for example within your IDE
 
 *   Adjust all sections marked with TODO (and remove TODO statement) in : 
     *    [pom.xml](pom.xml) 
@@ -11,8 +11,8 @@
     *    [docker-compose.yml](deploy/docker-compose.yml)
 
 *   In README.md:
-    *   Search/replace (case-sensitive) `JexxaTemplate` by `<ProjectName>`
-    *   Search/replace (case-sensitive) `jexxatemplate` by `<projectname>`
+    *   Search/replace (case-sensitive) `WebJexxa` by `<ProjectName>`
+    *   Search/replace (case-sensitive) `webjexxa` by `<projectname>`
     *   Adjust the badges (first two lines)
 
 *   Adjust release version
@@ -20,8 +20,6 @@
     mvn versions:set -DnewVersion='0.1.0-SNAPSHOT'
     ```
 
-*   [Optional] Build a docker image via ['New Release' GitHub-Actions](https://github.com/jexxa-projects/JexxaTemplate/actions/workflows/newRelease.yml) 
-    ```shell
-    mvn versions:set -DnewVersion='0.1.0-SNAPSHOT'
-    ```
+*   [Optional] Build a docker image via ['New Release' GitHub-Actions](https://github.com/jexxa-projects/WebJexxa/actions/workflows/newRelease.yml) 
+
 
