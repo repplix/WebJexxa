@@ -59,4 +59,10 @@ public final class BookRepositoryImpl implements BookRepository
     {
         return repository.get();
     }
+
+    @Override
+    public void remove(ISBN13 isbn13) {
+        repository.remove(isbn13);
+    }
+
 }

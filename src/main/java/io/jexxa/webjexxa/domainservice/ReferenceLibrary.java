@@ -27,6 +27,8 @@ public class ReferenceLibrary
         getLatestBooks()
                 .filter(book -> ! bookRepository.isRegistered(book)) // Filter already maintained books.
                 .forEach(isbn13 -> bookRepository.add(Book.newBook(isbn13)));
+
+        bookRepository.remove(createISBN("978-1-60309-025-4" ));
     }
 
     /** Some Random books found in internet */
