@@ -1,5 +1,5 @@
-[![Maven Test Build](https://github.com/jexxa-projects/WebJexxa/actions/workflows/mavenBuild.yml/badge.svg)](https://github.com/jexxa-projects/WebJexxa/actions/workflows/mavenBuild.yml)
-[![New Release](https://github.com/jexxa-projects/WebJexxa/actions/workflows/newRelease.yml/badge.svg)](https://github.com/jexxa-projects/WebJexxa/actions/workflows/newRelease.yml)
+[![Maven Test Build](https://github.com/repplix/WebJexxa/actions/workflows/mavenBuild.yml/badge.svg)](https://github.com/repplix/WebJexxa/actions/workflows/mavenBuild.yml)
+[![New Release](https://github.com/repplix/WebJexxa/actions/workflows/newRelease.yml/badge.svg)](https://github.com/jexxa-projects/WebJexxa/actions/workflows/newRelease.yml)
 
 # WebJexxa
 This template can be used to start your own Jexxa application 
