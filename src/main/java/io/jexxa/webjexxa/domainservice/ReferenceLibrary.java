@@ -33,7 +33,7 @@ public class ReferenceLibrary
     private Stream<ISBN13> getLatestBooks()
     {
         return Stream.of(
-                createISBN("978-1-60309-025-4" ),
+                //createISBN("978-1-60309-025-4" ),
                 createISBN("978-1-60309-025-4" ),
                 createISBN("978-1-60309-047-6" ),
                 createISBN("978-1-60309-322-4" ),
